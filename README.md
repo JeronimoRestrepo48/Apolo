@@ -11,7 +11,7 @@
 
 2. At a terminal, run the following command:
     ```
-    git clone https://github.com/SCAR-EAFIT/Final-Workshop
+    git clone https://github.com/JeronimoRestrepo48/Final-Workshop-Apolo.git
     ```
 
 3. Go to the directory where you cloned the project:
@@ -26,7 +26,7 @@
 
 5. Compile the `mmm_implementation.c` file inside the bin directory:
     ```
-   gcc -fopenmp -mavx -O3 -o bin/new new.c
+   gcc -fopenmp -mavx -O3 -o bin/mmm mmm_implementation.c
     ```
 
 6. Run the program:
