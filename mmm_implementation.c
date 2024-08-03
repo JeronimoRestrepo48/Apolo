@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 10
+#define N 50
 #define MIN_SIZE 2
-#define MAX_SIZE 1000
+#define MAX_SIZE 5000
 #define MAX_NUM 10000000.0
 
 int main(){
