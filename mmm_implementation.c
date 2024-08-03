@@ -10,7 +10,7 @@
 
 int main(){
     srand((unsigned) time(NULL));
-    int size = 500, iterator = 0;
+    int size = MIN_SIZE + (rand() % MAX_SIZE), iterator = 0;
     double time_spent = 0.0;
     double A[size][size] __attribute__((aligned(64))), B[size][size] __attribute__((aligned(64))), C[size][size] __attribute__((aligned(64)));
 
