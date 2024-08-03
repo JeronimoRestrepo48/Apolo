@@ -10,7 +10,7 @@
 
 int main(){
     srand((unsigned) time(NULL));
-    int size = MIN_SIZE + (rand() % MAX_SIZE), iterator = 0;
+    int size = 500, iterator = 0;
     double time_spent = 0.0;
     double A[size][size] __attribute__((aligned(64))), B[size][size] __attribute__((aligned(64))), C[size][size] __attribute__((aligned(64)));
 
@@ -20,8 +20,9 @@ int main(){
         clock_t begin_time = clock();
         
         // Start modifying here
-        #pragma omp parallel for 
+        #pragma omp parallel 
         #pragma omp set num_threads(10)
+        #pragma omp for
         for(int i = 0; i < size; i++){
             for(int j = 0; j < size; j++){
                 A[j][i] = 1 + ((double)rand() / RAND_MAX) * MAX_NUM; 
@@ -29,8 +30,9 @@ int main(){
                 C[j][i] = 0;
             }
         }
-        #pragma omp parallel for 
+        #pragma omp parallel 
         #pragma omp set num_threads(10)
+        #pragma omp for
         for(int j = 0; j < size; j++){
             for(int k = 0; k < size; k++){
                 for(int i = 0; i < size; i++){
