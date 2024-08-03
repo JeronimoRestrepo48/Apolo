@@ -64,17 +64,8 @@ When you run the final test of the program, you should recover the original valu
 #define MAX_SIZE 5000
 ```
 
-## Recommendations
-
-When you open the `mmm_implementation.c` file, you will see some comments, indicating the starting point endpoint to modify.
-
-Search for information on the Internet. Please do not rely on AI's, such as ChatGPT, Claude, or Gemini; you can use them for support, but they can also be wrong.
-
-You have your own time to access APOLO, don't forget to respect these times, because other people also need access. Before you start testing in APOLO you should test and modify the code on your pc.
-
-Create your own GitHub repository and clone it in APOLO, it will be easier for you.
-
-Always run the `job.sh` script to test the `mmm_implementation.c`.
+## Details 
+With the objective of optimizing the matrix-matrix multiplication algorithm, parallelization with OpenMP was applied as the main strategy, using the respective libraries and directly modifying the code to improve the execution time and efficiency of the loops. Later, some specific flags were used to compile the code, which help improve execution with vectorization strategies. Here are some photos of the execution tests (with a normal computer and with APOLO)
 
 ## Authors
 - Jerónimo Restrepo
