@@ -16,7 +16,7 @@
 
 3. Go to the directory where you cloned the project:
     ```
-    cd Final-Workshop
+    cd Final-Workshop-Apolo
     ```
 
 4. Create a `bin` directory inside the root of the project:
@@ -26,7 +26,7 @@
 
 5. Compile the `mmm_implementation.c` file inside the bin directory:
     ```
-    gcc -o bin/mmm mmm_implementation.c
+   gcc -fopenmp -mavx -O3 -o bin/new new.c
     ```
 
 6. Run the program:
