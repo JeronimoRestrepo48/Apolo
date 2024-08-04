@@ -94,6 +94,12 @@ In the pictures it's shown the execution of the matrix-matrix multiplication alg
 
 ![image](https://github.com/user-attachments/assets/debf4c1f-9ec3-459f-8edf-27d878b4cf6c)
 
+In the second picture, we can see that the size of the arrays is increased to 4354 x 4354, so as a result of this the running time increased to 1155 seconds for the same iterations.
+
+![image](https://github.com/user-attachments/assets/7bfa816f-5d1a-47fd-b8f1-bf6a6715249f)
+
+## Bibliography
+- Proceedings of the 2017 International Conference on Frontiers in Education: Computer Science and Computer Engineering. (2017). Retrieved from #https://www.jsums.edu/robotics/files/2016/12/FECS17_Proceedings-FEC3555.pdf
 
 ## Authors
 - Jerónimo Restrepo
