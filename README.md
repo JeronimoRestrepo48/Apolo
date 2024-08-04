@@ -99,7 +99,8 @@ In the second picture, we can see that the size of the arrays is increased to 43
 ![image](https://github.com/user-attachments/assets/7bfa816f-5d1a-47fd-b8f1-bf6a6715249f)
 
 ## Bibliography
-- Proceedings of the 2017 International Conference on Frontiers in Education: Computer Science and Computer Engineering. (2017). Retrieved from #https://www.jsums.edu/robotics/files/2016/12/FECS17_Proceedings-FEC3555.pdf
+- Proceedings of the 2017 International Conference on Frontiers in Education: Computer Science and Computer Engineering. (2017). Retrieved from https://www.jsums.edu/robotics/files/2016/12/FECS17_Proceedings-FEC3555.pdf
+- Monsalve, J. (n.d.). OpenMP Tutorial. GitHub. Retrieved August 4, 2024, from https://github.com/josemonsalve2/openmp_tutorial
 
 ## Authors
 - Jerónimo Restrepo
