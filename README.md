@@ -65,7 +65,13 @@ When you run the final test of the program, you should recover the original valu
 ```
 
 ## Details 
-With the objective of optimizing the matrix-matrix multiplication algorithm, parallelization with OpenMP was applied as the main strategy, using the respective libraries and directly modifying the code to improve the execution time and efficiency of the loops. Later, some specific flags were used to compile the code, which help improve execution with vectorization strategies. Here are some photos of the execution tests (with a normal computer and with APOLO)
+With the objective of optimizing the matrix-matrix multiplication algorithm, parallelization with OpenMP was applied as the main strategy, using the respective libraries and directly modifying the code to improve the execution time and efficiency of the loops. Later, some specific flags were used to compile the code, which help improve execution with vectorization strategies. 
+
+## Simulations
+Here are some photos of the execution tests (with a normal computer and with APOLO).
+
+In the first picture, it's shown the execution of the matrix-matrix multiplication algorithm in APOLO, so we can evidence that the running time for it is about 105 seconds per iteration (50 times) with arrays of 1872 x 1872.
+
 ![image](https://github.com/user-attachments/assets/debf4c1f-9ec3-459f-8edf-27d878b4cf6c)
 
 
