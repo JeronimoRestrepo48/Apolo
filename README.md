@@ -9,33 +9,53 @@
 
 1. Access APOLO in the corresponding schedule.
 
-2. At a terminal, run the following command:
+2. Create your own directory with your name in capital letter.
+
+3. At a terminal, run the following command:
     ```
     git clone https://github.com/JeronimoRestrepo48/Final-Workshop-Apolo.git
     ```
-
-3. Go to the directory where you cloned the project:
+4. Go to the directory where you cloned the project:
     ```
     cd Final-Workshop-Apolo
     ```
-
-4. Create a `bin` directory inside the root of the project:
+5. Copy the `job.sh` file to your directory with the following command:
+   ```
+   cp job.sh DIRECTORY'S_NAME/
+    ```
+6. Create a `bin` directory inside the root of the project:
     ```
     mkdir bin
     ```
-
-5. Compile the `mmm_implementation.c` file inside the bin directory:
+7. Compile the `mmm_implementation.c` file inside the bin directory:
     ```
    gcc -fopenmp -mavx -O3 -o bin/mmm mmm_implementation.c
     ```
-
-6. Run the program:
+8. In the `job.sh` file modify the `dir` word with the name of the directory where it is located the executable file of the 
+   `mmm_implementation.c` file.
+    
+9. Run the program:
     - In APOLO:
         ```
         sbatch job.sh
         ```
-
-    - In you pc:
+        - After that a new job is created with an ID number, so it's important to check if the job is running correctly in your queue 
+          with the command:
+          ```
+          smyqueue
+          ```
+        - When the job is finally executed you can see in the files inside your main directory two new files with the extensions `.err` 
+          and `.out`, therefore you need to execute first the `.err` file to check if there aren't any errors in the compilation and 
+          execution with the command:
+          ```
+          cat MMM_SCAR_JOB_ID.err 
+          ```
+          Then, if there is no error we can proceed to run the `.out` file to obtain the results with the following command:
+          ```
+          cat MMM_SCAR_JOB_ID.out 
+          ```
+          **NOTE:** Replace the `JOB_ID` with your job's ID.
+    - In your pc:
         ```
         ./bin/mmm
         ```
